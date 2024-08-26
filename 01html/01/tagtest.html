@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset  */
+        *{margin: 0;padding: 0;}
+        /* a:link{text-decoration: none;color:black}
+        a:visited{color:black} */
+        a:link,a:visited{text-decoration: none;color:black}
+        li{list-style: none;}
+        table{
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* #content .link1{color:red}
+        body > a.link1{color:blue} */
+
+        #content a.link1{color:blue}
+        a.link1{color:red}
+
+
+        .boxWrap{
+            width: 90%;
+            background-color: blue;
+        }
+        .box{
+            background-color: skyblue;
+            /* width: 300px; */
+            width: 50%;
+
+        }
+    </style>
+</head>
+<body id="content">
+    <h1>test</h1>
+    <a href="http://www.korea.com" class="link1">korea</a>
+    <a href="http://www.daum.net">daum</a>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td><a href="test" class="link1">list</a></td>
+        </tr>
+    </table>
+
+    <div class="boxWrap">
+        <div class="box">
+            안녕하세요. 
+        </div>
+    </div>
+    <p>111</p>
+   
+</body>
+</html>

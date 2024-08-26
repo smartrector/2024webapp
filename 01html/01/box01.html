@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        a:link,a:visited{text-decoration: none;color:black}
+        ul,li{list-style: none;}
+        .box{
+            
+            background-color: skyblue;
+            /* height: 50px; */
+            /* display:inline-block; */
+            margin: 10px;
+            /* margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; */
+            padding: 10px;
+        }
+
+        .menuWrap{
+            background-color: blue;
+            /* height: 50px; */
+        }
+        ul.menu{width: 1360px;
+            /* margin-left:auto;margin-right: auto; */
+            margin: 0 auto;
+        }
+        ul.menu:after{
+            content:"";
+            display: block;
+            clear:both;
+        }
+        ul.menu > li{
+            float: left;width: 25%;
+            /* height: 80px; */
+            background: pink;}
+        ul.menu a{
+            background-color: skyblue;
+            width: 100%;
+            display: block;
+            /* height: 75px; */
+            line-height: 100px;
+            text-align: center;
+        }
+        ul.menu a:hover{
+            background-color: green;
+            color:white
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- <div class="box">tesssssssss</div> -->
+    <div class="menuWrap">  <!-- 100%  -->
+        <ul class="menu"> <!-- 1360px -->
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+
+        </ul>
+    </div>
+    <!-- <style>
+        .box1{
+            background-color: blue;
+            width: 200px;
+            margin-left:auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+    <div class="box1">test</div> -->
+    <style>
+        .box2{
+            border: 1px solid #000;
+            display: inline-block;
+        }
+        .box2:before{content:"홍길동님, "}
+        .box2:after{
+            content:"!!!"
+        }
+    </style>
+    <div class="box2">
+        
+        안녕하세요
+
+    </div>
+
+    <style>
+        .title{width: 300px;text-align: center;margin: 0 auto}
+        .title:after,.title::before{
+            content:"";
+            display: block;
+            width: 100%;height: 1px;background-color: black;
+            margin: 10px auto
+        }
+        .content_text{
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+    <h2 class="title">title</h2>
+    <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi minus at, atque perspiciatis iure magnam voluptatum temporibus nam. Incidunt, illo.</p>
+</body>
+</html>

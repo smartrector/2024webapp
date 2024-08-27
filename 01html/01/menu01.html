@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset  */
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        a:link,a:visited{text-decoration: none;color:#333}
+        ul,li{list-style: none;}
+        .clear:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        /* header  */
+        .hd{
+            background-color: skyblue;
+        }
+        .menuWrap{
+            width: 1360px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+
+        .menuWrap h1{float: left;}
+        .menuWrap .gnb{float: right;}
+        .menuWrap .gnb ul li{
+            float: left;
+            background-color: blue;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="hd">
+        <div class="menuWrap clear"> <!-- w1360 m0a -->
+            <h1>logo</h1>
+            <nav class="gnb">
+                <ul class="clear">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                    <li><a href="#">menu5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

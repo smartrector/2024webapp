@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script></script>
+</head>
+<body>
+    <button onclick="alert('test')">클릭</button>
+    <script>
+        document.write("test");
+        console.log("hello");
+
+        var day;
+        var week = new Date().getDay();
+        console.log(week)
+
+        switch(week){
+            case 0: 
+                day = "일요일"; 
+                break;
+            case 2: 
+                day = "화요일"; 
+                break;
+        }
+
+        // document.write("오늘은 " + day + "입니다.")
+        document.write(`오늘은 ${day} 입니다. `)
+
+
+        var city = ["서울","부산","대구"]
+
+        function printA(){
+            for(var i=0;i<city.length;i++){
+                document.write(`${city[i]}<br>`)
+            }
+        }
+        
+        printA();
+
+        // city.forEach(function(){})
+
+        function printArr(item,i){
+            document.write("배열데이터 [" + i + "] : " +item+"<br>")
+        }
+        city.forEach(printArr);
+
+
+        city.forEach(function(item,i){
+            document.write("배열데이터 [" + i + "] : " +item+"<br>")
+        })
+
+        var data = [1,2,3,4,5,6]
+
+        function mapArr(value){
+            return value * value;
+        }
+
+        var mapData = data.map(mapArr)
+        document.write(mapData)
+    </script>
+
+
+<p id="var1"></p>
+<p id="var2" class="var2"></p>
+<p id="var3"  class="var2"></p>
+
+<script>
+    var car = {
+        name:'sonata',
+        speed:100,
+        color:'white'
+    }
+    document.getElementById('var1').innerHTML = car.name
+    //$("#var1").html(car.name) // jquery 
+    document.getElementsByClassName('var2')[0].innerHTML = car.speed
+</script>
+<style>
+    .box{width: 100px;height: 100px;background-color: skyblue;transition: 0.3s;}
+</style>
+
+<div class="box"></div>
+
+
+
+<button onclick="boxChange()">click</button>
+<script>
+    function boxChange(){
+        document.getElementsByClassName("box")[0].style.backgroundColor = "red"
+        document.getElementsByClassName("box")[0].style.width = "150px"
+        
+    }
+</script>
+</body>
+</html>

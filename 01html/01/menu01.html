@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <style>
+   
+  <style>
         /* reset  */
         *{margin: 0;padding: 0;box-sizing: border-box;}
         a:link,a:visited{text-decoration: none;color:#333}
@@ -30,7 +31,7 @@
 
         .menuWrap h1{
             float: left;font-size: 20px;
-            /* background-color: blue; */
+            background-color: blue;
             height: 50px;
             display: flex;
             justify-content: center;
@@ -72,11 +73,39 @@
 
         .visual .item{
             height:300px;
-            background-color: skyblue;
+            /* background-color: skyblue; */
             display: flex;
             justify-content: center;
             align-items: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+
         }
+
+        .visual .item.st1{
+            background-image: url(./images/banner01.jpg);
+        }
+        .visual .item.st2{
+            background-image: url(./images/banner02.jpg);
+        }
+        .visual .item.st3{
+            background-image: url(./images/banner03.jpg);
+        }
+        .visual .item .textWrap{
+            width: 1360px;
+            /* background-color: white; */
+            padding-left:20px;
+            color:white;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5) ;
+        }
+        /* .visual .item .textWrap h3{
+            margin-bottom: 10px;
+        } */
+
+        /* common  */
+        .mb10{margin-bottom: 10px !important;}
+        .mb20{margin-bottom: 20px !important;}
+        .mb30{margin-bottom: 30px !important;}
     </style>
 </head>
 <body>
@@ -96,27 +125,40 @@
     </header>
     <div class="visual">
         <ul class="slide">
-            <li class="item st1">test1
-                <!-- <img src="./images/banner01.jpg" alt=""> -->
+            <li class="item st1">
+                <div class="textWrap"> <!-- w1360px -->
+                    <h3 class="mb20">Lorem, ipsum1.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur<br>adipisicing elit. Et, iusto.</p>
+                </div>
             </li>
-            <li class="item st2">test2
-                <!-- <img src="./images/banner01.jpg" alt=""> -->
+            <li class="item st2">
+                <div class="textWrap"> <!-- w1360px -->
+                    <h3 class="mb20">Lorem, ipsum2.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur<br>adipisicing elit. Et, iusto.</p>
+                </div>
             </li>
-            <li class="item st3">test3
-                <!-- <img src="./images/banner01.jpg" alt=""> -->
+            <li class="item st3">
+                <div class="textWrap"> <!-- w1360px -->
+                    <h3 class="mb20">Lorem, ipsum3.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur<br>adipisicing elit. Et, iusto.</p>
+                </div>
             </li>
             
         </ul>
     </div>
 
-
     <script src="./js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js" integrity="sha512-LaBO0tZh1+6Ebk+EnHt/WsGM0UnmkCXfQ1rfhGmpa5MXUdslNuSSELBRcteHKz4k4ny+Op10Ax2fPoTNq+VcUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $(".slide").bxSlider({
-            auto:true
-        });
+
+        
+            $(".slide").bxSlider({
+                auto:true
+            });
+      
+       
     </script>
 
+    
 </body>
 </html>

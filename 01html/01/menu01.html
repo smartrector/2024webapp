@@ -15,6 +15,7 @@
             display: block;
             clear: both;
         }
+        img{display: block;}
 
         /* header  */
         .hd{
@@ -58,9 +59,24 @@
             background-color: skyblue;
         }
 
+        /* visual  */
+        .visual{background-color: skyblue;}
 
+        .bx-wrapper {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border: 0 none;
+            background: #fff;
+        }
 
-
+        .visual .item{
+            height:300px;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -78,11 +94,28 @@
             </nav>
         </div>
     </header>
+    <div class="visual">
+        <ul class="slide">
+            <li class="item st1">test1
+                <!-- <img src="./images/banner01.jpg" alt=""> -->
+            </li>
+            <li class="item st2">test2
+                <!-- <img src="./images/banner01.jpg" alt=""> -->
+            </li>
+            <li class="item st3">test3
+                <!-- <img src="./images/banner01.jpg" alt=""> -->
+            </li>
+            
+        </ul>
+    </div>
+
 
     <script src="./js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js" integrity="sha512-LaBO0tZh1+6Ebk+EnHt/WsGM0UnmkCXfQ1rfhGmpa5MXUdslNuSSELBRcteHKz4k4ny+Op10Ax2fPoTNq+VcUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        
+        $(".slide").bxSlider({
+            auto:true
+        });
     </script>
 
 </body>

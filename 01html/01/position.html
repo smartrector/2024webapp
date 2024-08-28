@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        html,body{height: 100%;}
+
+        body{
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxWrap{
+            width: 400px;height: 400px;
+            background: skyblue;
+            position: relative;
+            /* overflow: hidden; */
+        }
+        .boxWrap div{
+            width: 100px;
+            height: 100px;
+        }
+
+        .boxWrap .box1{
+            background: black;
+            /* position: absolute;
+            right: -50px; */
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .boxWrap .box2{
+            background: red;
+            position: relative;
+            z-index: 2;
+        }
+        .boxWrap .box3{
+            background-color: blue;
+            position: absolute;
+            top: 100px;left: 50px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxWrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

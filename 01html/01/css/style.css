@@ -11,11 +11,52 @@
 .bg-orange{
     background-color: orange !important;
 }
+.bg-sky{
+    background-color: skyblue !important;
+}
 
+
+.hd{
+    box-shadow:0 0 10px rgba(0,0,0,0.3) ;
+}
 .menuWrap{
     display: flex;
-    justify-content:space-between
+    justify-content:space-between;
+    /* height: 70px; */
+    padding: 10px 0;
+    /* align-items: center; */
 }
 
 .menuWrap .gnb ul{display: flex;}
-.menuWrap .sns{display: flex;}
+.menuWrap .gnb li{width: 150px;height: 50px;}
+.menuWrap .gnb a{
+    display: block;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuWrap .gnb a:hover{
+    font-weight: bold;
+}
+
+.menuWrap .sns{
+    display: flex;
+    align-self: center;
+    gap:10px
+    
+}
+.menuWrap .sns li{
+    width: 40px;height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50% ;
+    background: #00f;
+    color:white
+}
+
+
+.visual{
+    height: 400px;
+}

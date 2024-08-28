@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.container{
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.bg-gray{
+    background-color: #ddd !important;
+}
+.bg-orange{
+    background-color: orange !important;
+}
+
+.menuWrap{
+    display: flex;
+    justify-content:space-between
+}
+
+.menuWrap .gnb ul{display: flex;}
+.menuWrap .sns{display: flex;}

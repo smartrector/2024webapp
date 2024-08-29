@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -37,7 +38,7 @@
         </div>
     </nav>
     <div class="visualWrap pt-5">
-       <div class="container text-white text-center py-5">
+       <div class="container text-white text-center py-5 wow slideInLeft">
         <h2 class="mb-3 mb-md-0">Lorem ipsum dolor sit amet.</h2>
         <h4 class="mb-3 d-none d-md-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsam.</h4>
         <div class="mb-3">
@@ -49,12 +50,12 @@
     <div class="bg-gray py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 order-2 order-md-1 text-center text-md-start">
+                <div class="col-md-5 order-2 order-md-1 text-center text-md-start wow fadeInUp">
                     <h2>Lorem ipsum dolor sit amet.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, at!</p>
                     <a href="#" class="btn btn-info d-block d-md-inline-block">MORE</a>
                 </div>
-                <div class="col-md-7 order-1 order-md-2 mb-5 mb-md-0">
+                <div class="col-md-7 order-1 order-md-2 mb-5 mb-md-0 wow fadeInUp" data-wow-delay="0.3s">
                     <img src="./images/symu-panel-1.png" alt=""  style="width: 100%;">
                 </div>
             </div>
@@ -62,10 +63,10 @@
     </div>
     <div class="container py-5">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-7 wow fadeInUp">
                 <img src="./images/symu-panel-2.png" alt="" style="width:100%">
             </div>
-            <div class="col-md-5 text-center text-md-start">
+            <div class="col-md-5 text-center text-md-start wow fadeInUp" data-wow-delay="0.3s">
                 <h2>Lorem ipsum dolor sit amet.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, at!</p>
                 <a href="#" class="btn btn-info d-block d-md-inline-block">MORE</a>
@@ -84,5 +85,9 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

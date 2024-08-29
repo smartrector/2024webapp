@@ -4,3 +4,7 @@
     background:url(../images/bg-top.jpg) no-repeat center;
     background-size: cover;
 }
+
+.bg-gray{
+    background-color: #f0f1f4 !important;
+}

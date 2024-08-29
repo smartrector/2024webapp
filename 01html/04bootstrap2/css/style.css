@@ -1,9 +1,12 @@
 @charset "utf-8";
 
 :root{
+
+    --primary-color-0:#aaa;
     --primary-color-1:pink;
+    --primary-color-2:#efefef;
     --text-shadow-1:0 10px 10px rgba(0,0,0,0.3);
-    --shadow-1:rgba(0,0,0,0.5)
+    --shadow-1:rgba(0,0,0,0.2)
 }
 
 .testWrap{
@@ -16,3 +19,55 @@
     background: url(../images/slider-bg.svg) no-repeat center;
     background-size: cover;
 }
+
+.shadow{
+    box-shadow: 0 0 10px var(--shadow-1) !important;
+}
+
+.btnShadow{
+    box-shadow: 0 5px 10px var(--shadow-1) !important;
+}
+
+/* service  */
+
+.conTitle{
+    position: relative;
+   
+    display: inline-block;
+    /* background-color: skyblue; */
+    left: 50%;
+    /* margin-left: -150px; */
+    transform: translateX(-50%);
+}
+.conTitle:after{
+    content:"";
+    display: block;
+    /* width: 100px;
+    height: 2px;
+    background-color: var(--primary-color-0);
+    margin: 10px auto */
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color-0);
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    top: -5px;
+}
+.service .card{
+    background-color: var(--primary-color-2);
+    border:0 none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.service .card:hover{
+    transform:scale(1.1) translate(-20px, -20px);
+    box-shadow: 15px 15px 20px var(--shadow-1)
+}
+
+
+.service .card img{
+    height: 200px;
+}
+

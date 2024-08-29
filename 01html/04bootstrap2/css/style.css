@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+:root{
+    --primary-color-1:pink;
+    --text-shadow-1:0 10px 10px rgba(0,0,0,0.3);
+    --shadow-1:rgba(0,0,0,0.5)
+}
+
+.testWrap{
+    background-color:var(--primary-color-1);
+    box-shadow: 0 10px 10px var(--shadow-1);
+}
+
+
+.visualWrap{
+    background: url(../images/slider-bg.svg) no-repeat center;
+    background-size: cover;
+}

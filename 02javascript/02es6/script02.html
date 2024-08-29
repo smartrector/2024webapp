@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="demo"></h1>
+    <script>
+        // console.log(1);
+        // setTimeout(function(){
+        //     console.log(2)
+        // },1000);
+        // console.log(3);
+
+
+        function fn1(fn){
+            console.log(1)
+            fn() // fn2()
+        }
+
+        function fn2(){
+            console.log(2)
+        }
+
+        
+
+
+        //  fn1(fn2).then(function(){}).then(function(){}).catch();
+
+        // fn1(function(){
+        //     console.log(2)
+        // })
+
+        // const pro = new Promise(function(성공,실패){
+        //     console.log(1)
+        //     let num = 101
+        //     if(num == 100){
+        //         성공(num)
+        //     }else{
+        //         실패()
+        //     }
+            
+        // })
+
+        // pro.then(function(num){
+        //     console.log('성공입니다.',num)
+        // }).catch(function(){
+        //     console.log("실패입니다.")
+        // })
+
+        // const pro = new Promise(function(resolve,reject){
+        //     setTimeout(function(){
+        //         resolve("hi")
+        //     },3000)
+        // })
+
+        // pro.then(function(value){
+        //     console.log(value)
+        //     document.getElementById("demo").innerHTML = value
+        // })
+
+        const data = []
+
+       async function getUser(){
+        try {
+            const respose = await axios.get()
+
+        } catch (error) {
+            
+        }
+       
+       }
+
+       getUser()
+        
+    </script>
+</body>
+</html>

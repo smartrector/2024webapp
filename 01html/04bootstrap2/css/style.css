@@ -10,6 +10,11 @@
 }
 
 ul,li{list-style: none;margin: 0;padding: 0;}
+a:link,a:visited{
+    text-decoration: none;
+    color: black;
+}
+
 
 .testWrap{
     background-color:var(--primary-color-1);

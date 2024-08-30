@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.css" integrity="sha512-UhvuUthI9VM4N3ZJ5o1lZgj2zNtANzr3zyucuZZDy67BO6Ep5+rJN2PST7kPj+fOI7M/7wVeYaSaaAICmIQ4sQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+    <nav class="header navbar navbar-expand-lg bg-body-tertiary shadow">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./images/logo.svg" alt="" class="img-fluid" style="height: 50px;">
@@ -247,6 +248,29 @@
         </div>
        </div>
        <hr>
+       <div class="row mb-5">
+        <div class="col-md-6 mb-3">
+          <ul class="d-flex justify-content-center justify-content-md-start">
+            <li><a href="javascript:void(0)">Privacy</a></li>
+            <li class="px-2">/</li>
+            <li><a href="#!">Teams</a></li>
+            <li class="px-2">/</li>
+            <li><a href="#!">Site map</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="d-flex justify-content-center gap-3 justify-content-md-end">
+            <li><a href="#!"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#!"><i class="fa-brands fa-google"></i></a></li>
+            <li><a href="#!"><i class="fa-brands fa-github"></i></a></li>
+          </ul>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+          <p class="small">Lorem ipsum dolor sit.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eligendi.</p>
+        </div>
+       </div>
       </div>
     </div>
 
@@ -258,6 +282,19 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js" integrity="sha512-fCRpXk4VumjVNtE0j+OyOqzPxF1eZwacU3kN3SsznRPWHgMTSSo7INc8aY03KQDBWztuMo5KjKzCFXI/a5rVYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+
+      $(window).scroll(function(){
+        let scroll = $(window).scrollTop()
+        console.log(scroll)
+
+        if(scroll > 300){
+          $(".header").addClass("fixed-top")
+        }else{
+          $(".header").removeClass("fixed-top")
+        }
+      })
+
+      
 
       const btns = $(".portfolio .btn-group button")
       btns.click(function(){

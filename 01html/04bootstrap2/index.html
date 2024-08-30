@@ -104,7 +104,7 @@
             
         </div>
     </div>
-    <div class="container customer">
+    <div class="container customer mb-5">
       <h2 class="text-center conTitle">CUSTOMER</h2>
         <p class="text-center mb-5">Lorem ipsum dolor sit amet.</p>
       <div class="owl-carousel owl-theme">
@@ -121,14 +121,77 @@
       </div>
 
     </div>
+    <div class="container portfolio">
+      <h2 class="text-center conTitle">PORTFOLIO</h2>
+        <p class="text-center mb-3">Lorem ipsum dolor sit amet.</p>
+      <div class="btn-group mb-3">
+        <button data-filter="" class="btn btn-primary active" >ALL</button>
+        <button data-filter=".web" class="btn btn-primary " >WEB</button>
+        <button data-filter=".vue" class="btn btn-primary " >VUE</button>
+        <button data-filter=".react" class="btn btn-primary" >REACT</button>
+        <button data-filter=".jpa" class="btn btn-primary " >JPA</button>
+      </div>
+      <div class="row view">
+        <div class="col-6 col-lg-3 element-item web mb-3">
+          <a href="!#">
+            <img src="./images/servicos/1.jpg" alt="" class="img-fluid rounded">
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 element-item vue">
+          <a href="#">
+            <img src="./images/servicos/2.jpg" alt="" class="img-fluid rounded">
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 element-item react">
+          <a href="#">
+            <img src="./images/servicos/3.jpg" alt="" class="img-fluid rounded">
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 element-item react">
+          <a href="#">
+            <img src="./images/servicos/3.jpg" alt="" class="img-fluid rounded">
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 element-item react">
+          <a href="#">
+            <img src="./images/servicos/3.jpg" alt="" class="img-fluid rounded">
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 element-item react">
+          <a href="#">
+            <img src="./images/servicos/3.jpg" alt="" class="img-fluid rounded">
+          </a>
+        </div>
+
+      </div>
+    </div>
 
    
     <div style="height: 500px;"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
+
+      const btns = $(".portfolio .btn-group button")
+      btns.click(function(){
+        let i= $(this).index()
+        console.log(i);
+        btns.removeClass("active")
+        btns.eq(i).addClass("active")
+
+        let selector = btns.eq(i).attr("data-filter")
+        console.log(selector)
+
+        $(".portfolio .view").isotope({
+          filter:selector
+        })
+        
+      })
+
+
+
       $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,

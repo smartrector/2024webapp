@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import 'base.scss';
+
+body {
+   font-family: $primary-font;
+   font-size: $base-font-size;
+}
+.container {
+   width: 1300px;
+   margin: 0 auto;
+   background: $primary-color;
+
+   @media screen and (max-width: 1300px) {
+      width: 100%;
+   }
+}

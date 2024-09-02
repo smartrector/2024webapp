@@ -1,190 +1,296 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.css" integrity="sha512-UhvuUthI9VM4N3ZJ5o1lZgj2zNtANzr3zyucuZZDy67BO6Ep5+rJN2PST7kPj+fOI7M/7wVeYaSaaAICmIQ4sQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.css"
+      integrity="sha512-UhvuUthI9VM4N3ZJ5o1lZgj2zNtANzr3zyucuZZDy67BO6Ep5+rJN2PST7kPj+fOI7M/7wVeYaSaaAICmIQ4sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <nav class="header navbar navbar-expand-lg bg-body-tertiary shadow">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo.svg" alt="" class="img-fluid" style="height: 50px;">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Company</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Community</a>
-              </li>
-              
-            </ul>
-            
-          </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/logo.svg"
+            alt=""
+            class="img-fluid"
+            style="height: 50px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Community</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <div class="visualWrap mb-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-6 align-self-center order-2 order-md-1 text-center text-md-start">
-                    <h2>Lorem ipsum dolor sit.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <a href="#" class="btn btn-primary d-block d-md-inline-block btnShadow">MORE</a>
-                </div>
-                <div class="col-md-6 order-1 order-md-2 mb-3 mb-md-0">
-                    <img src="./images/slider.svg" alt="" class="img-fluid">
-                </div>
-            </div>
+      <div class="container py-5">
+        <div class="row">
+          <div
+            class="col-md-6 align-self-center order-2 order-md-1 text-center text-md-start"
+          >
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a
+              href="#"
+              class="btn btn-primary d-block d-md-inline-block btnShadow"
+              >MORE</a
+            >
+          </div>
+          <div class="col-md-6 order-1 order-md-2 mb-3 mb-md-0">
+            <img src="./images/slider.svg" alt="" class="img-fluid" />
+          </div>
         </div>
+      </div>
     </div>
     <div class="container service py-5">
-        <h2 class="text-center conTitle">SERVICE</h2>
-        <p class="text-center mb-5">Lorem ipsum dolor sit amet.</p>
-        <div class="row">
-            <div class="col-md-6 col-lg-3 mb-3">
-                <div class="card p-3 pt-5 text-center" onclick="location.href='http://www.naver.com'">
-                    <img src="./images/destaque1.svg" alt="" class="img-fluid mb-3">
-                    <div class="card-body">
-                        <h4 class="card-title">Lorem, ipsum.</h4>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolor.
-                        </p>
-                    </div>
-                </div>
+      <h2 class="text-center conTitle">SERVICE</h2>
+      <p class="text-center mb-5">Lorem ipsum dolor sit amet.</p>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-3">
+          <div
+            class="card p-3 pt-5 text-center"
+            onclick="location.href='http://www.naver.com'"
+          >
+            <img src="./images/destaque1.svg" alt="" class="img-fluid mb-3" />
+            <div class="card-body">
+              <h4 class="card-title">Lorem, ipsum.</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                dolor.
+              </p>
             </div>
-            <div class="col-md-6 col-lg-3 mb-3">
-              <div class="card p-3 pt-5 text-center" onclick="location.href='http://www.naver.com'">
-                  <img src="./images/destaque2.svg" alt="" class="img-fluid mb-3">
-                  <div class="card-body">
-                      <h4 class="card-title">Lorem, ipsum.</h4>
-                      <p class="card-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolor.
-                      </p>
-                  </div>
-              </div>
           </div>
-            <div class="col-md-6 col-lg-3 mb-3">
-                <div class="card p-3 pt-5 text-center" onclick="location.href='http://www.naver.com'">
-                    <img src="./images/destaque3.svg" alt="" class="img-fluid mb-3">
-                    <div class="card-body">
-                        <h4 class="card-title">Lorem, ipsum.</h4>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolor.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-3">
-              <div class="card p-3 pt-5 text-center" onclick="location.href='http://www.naver.com'">
-                  <img src="./images/destaque4.svg" alt="" class="img-fluid mb-3">
-                  <div class="card-body">
-                      <h4 class="card-title">Lorem, ipsum.</h4>
-                      <p class="card-text">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolor.
-                      </p>
-                  </div>
-              </div>
-          </div>
-            
         </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <div
+            class="card p-3 pt-5 text-center"
+            onclick="location.href='http://www.naver.com'"
+          >
+            <img src="./images/destaque2.svg" alt="" class="img-fluid mb-3" />
+            <div class="card-body">
+              <h4 class="card-title">Lorem, ipsum.</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <div
+            class="card p-3 pt-5 text-center"
+            onclick="location.href='http://www.naver.com'"
+          >
+            <img src="./images/destaque3.svg" alt="" class="img-fluid mb-3" />
+            <div class="card-body">
+              <h4 class="card-title">Lorem, ipsum.</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <div
+            class="card p-3 pt-5 text-center"
+            onclick="location.href='http://www.naver.com'"
+          >
+            <img src="./images/destaque4.svg" alt="" class="img-fluid mb-3" />
+            <div class="card-body">
+              <h4 class="card-title">Lorem, ipsum.</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="bg-info py-5 mb-5">
-
       <div class="container customer">
         <h2 class="text-center conTitle">CUSTOMER</h2>
-          <p class="text-center mb-5">Lorem ipsum dolor sit amet.</p>
+        <p class="text-center mb-5">Lorem ipsum dolor sit amet.</p>
         <div class="owl-carousel owl-theme">
           <div class="item rounded">
             <div class="sliderView d-flex gap-3 p-3">
-              <img src="./images/user.svg" alt="" class="img-fluid" style="width:150px">
+              <img
+                src="./images/user.svg"
+                alt=""
+                class="img-fluid"
+                style="width: 150px"
+              />
               <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, pariatur.</p>
-                <img src="./images/quote.svg" alt="" style="width:30px" class="d-block ms-auto">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+                  pariatur.
+                </p>
+                <img
+                  src="./images/quote.svg"
+                  alt=""
+                  style="width: 30px"
+                  class="d-block ms-auto"
+                />
               </div>
             </div>
           </div>
-  
         </div>
-  
       </div>
     </div>
     <div class="container portfolio">
       <h2 class="text-center conTitle">PORTFOLIO</h2>
-        <p class="text-center mb-3">Lorem ipsum dolor sit amet.</p>
+      <p class="text-center mb-3">Lorem ipsum dolor sit amet.</p>
       <div class="btn-group mb-3">
-        <button data-filter="" class="btn btn-primary active" id="btn">ALL</button>
-        <button data-filter=".web" class="btn btn-primary " >WEB</button>
-        <button data-filter=".vue" class="btn btn-primary " >VUE</button>
-        <button data-filter=".react" class="btn btn-primary" >REACT</button>
-        <button data-filter=".jpa" class="btn btn-primary " >JPA</button>
+        <button data-filter="" class="btn btn-primary active" id="btn">
+          ALL
+        </button>
+        <button data-filter=".web" class="btn btn-primary">WEB</button>
+        <button data-filter=".vue" class="btn btn-primary">VUE</button>
+        <button data-filter=".react" class="btn btn-primary">REACT</button>
+        <button data-filter=".jpa" class="btn btn-primary">JPA</button>
       </div>
       <div class="row view">
         <div class="col-6 col-lg-3 element-item web mb-3">
           <a href="./images/servicos/1.jpg" class="popup-link">
-            <img src="./images/servicos/1.jpg" alt="" class="img-fluid rounded">
+            <img
+              src="./images/servicos/1.jpg"
+              alt=""
+              class="img-fluid rounded"
+            />
           </a>
         </div>
         <div class="col-6 col-lg-3 element-item vue mb-3">
           <a href="./images/servicos/2.jpg" class="popup-link">
-            <img src="./images/servicos/2.jpg" alt="" class="img-fluid rounded">
+            <img
+              src="./images/servicos/2.jpg"
+              alt=""
+              class="img-fluid rounded"
+            />
           </a>
         </div>
         <div class="col-6 col-lg-3 element-item react mb-3">
           <a href="./images/servicos/3.jpg" class="popup-link">
-            <img src="./images/servicos/3.jpg" alt="" class="img-fluid rounded">
+            <img
+              src="./images/servicos/3.jpg"
+              alt=""
+              class="img-fluid rounded"
+            />
           </a>
         </div>
         <div class="col-6 col-lg-3 element-item web mb-3">
           <a href="./images/servicos/4.jpg" class="popup-link">
-            <img src="./images/servicos/4.jpg" alt="" class="img-fluid rounded">
+            <img
+              src="./images/servicos/4.jpg"
+              alt=""
+              class="img-fluid rounded"
+            />
           </a>
         </div>
         <div class="col-6 col-lg-3 element-item react mb-3">
           <a href="./images/servicos/5.jpg" class="popup-link">
-            <img src="./images/servicos/5.jpg" alt="" class="img-fluid rounded">
+            <img
+              src="./images/servicos/5.jpg"
+              alt=""
+              class="img-fluid rounded"
+            />
           </a>
         </div>
         <div class="col-6 col-lg-3 element-item vue mb-3">
           <a href="./images/servicos/6.jpg" class="popup-link">
-            <img src="./images/servicos/6.jpg" alt="" class="img-fluid rounded">
+            <img
+              src="./images/servicos/6.jpg"
+              alt=""
+              class="img-fluid rounded"
+            />
           </a>
         </div>
         <div class="col-6 col-lg-3 element-item jpa mb-3">
           <a href="./images/servicos/7.jpg" class="popup-link">
-            <img src="./images/servicos/7.jpg" alt="" class="img-fluid rounded">
+            <img
+              src="./images/servicos/7.jpg"
+              alt=""
+              class="img-fluid rounded"
+            />
           </a>
         </div>
         <div class="col-6 col-lg-3 element-item react mb-3">
           <a href="./images/servicos/8.jpg" class="popup-link">
-            <img src="./images/servicos/8.jpg" alt="" class="img-fluid rounded">
+            <img
+              src="./images/servicos/8.jpg"
+              alt=""
+              class="img-fluid rounded"
+            />
           </a>
         </div>
         <div class="col-6 col-lg-3 element-item web mb-3">
           <a href="./images/servicos/9.jpg" class="popup-link">
-            <img src="./images/servicos/9.jpg" alt="" class="img-fluid rounded">
+            <img
+              src="./images/servicos/9.jpg"
+              alt=""
+              class="img-fluid rounded"
+            />
           </a>
         </div>
-       
-       
-
       </div>
     </div>
 
@@ -193,7 +299,10 @@
         <div class="row">
           <div class="col-md-6 offset-md-3 text-white text-center">
             <h2>CONTACT US</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quod!</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+              quod!
+            </p>
             <button class="btn btn-danger">NOW</button>
           </div>
         </div>
@@ -202,138 +311,161 @@
 
     <div class="footer py-5">
       <div class="container py-5 px-5">
-       <div class="row mb-5">
-        <div class="col-lg-3 mb-5">
-          <img src="images/udacity-logo.png" alt="" style="width: 50px;">
+        <div class="row mb-5">
+          <div class="col-lg-3 mb-5">
+            <img src="images/udacity-logo.png" alt="" style="width: 50px" />
+          </div>
+          <div class="col-6 col-lg mb-3 mb-md-0">
+            <h4>Company</h4>
+            <ul>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg">
+            <h4>Product</h4>
+            <ul>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg">
+            <h4>Community</h4>
+            <ul>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg">
+            <h4>Company</h4>
+            <ul>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+              <li>menu1</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-6 col-lg mb-3 mb-md-0">
-          <h4>Company</h4>
-          <ul>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-          </ul>
+        <hr />
+        <div class="row mb-5">
+          <div class="col-md-6 mb-3">
+            <ul class="d-flex justify-content-center justify-content-md-start">
+              <li><a href="javascript:void(0)">Privacy</a></li>
+              <li class="px-2">/</li>
+              <li><a href="#!">Teams</a></li>
+              <li class="px-2">/</li>
+              <li><a href="#!">Site map</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul
+              class="d-flex justify-content-center gap-3 justify-content-md-end"
+            >
+              <li>
+                <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#!"><i class="fa-brands fa-google"></i></a>
+              </li>
+              <li>
+                <a href="#!"><i class="fa-brands fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-6 col-lg">
-          <h4>Product</h4>
-          <ul>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-          </ul>
+        <div class="row">
+          <div class="col-md-8 offset-md-2 text-center">
+            <p class="small">
+              Lorem ipsum dolor sit.<br />Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Dicta, eligendi.
+            </p>
+          </div>
         </div>
-        <div class="col-6 col-lg">
-          <h4>Community</h4>
-          <ul>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg">
-          <h4>Company</h4>
-          <ul>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-            <li>menu1</li>
-          </ul>
-        </div>
-       </div>
-       <hr>
-       <div class="row mb-5">
-        <div class="col-md-6 mb-3">
-          <ul class="d-flex justify-content-center justify-content-md-start">
-            <li><a href="javascript:void(0)">Privacy</a></li>
-            <li class="px-2">/</li>
-            <li><a href="#!">Teams</a></li>
-            <li class="px-2">/</li>
-            <li><a href="#!">Site map</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <ul class="d-flex justify-content-center gap-3 justify-content-md-end">
-            <li><a href="#!"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#!"><i class="fa-brands fa-google"></i></a></li>
-            <li><a href="#!"><i class="fa-brands fa-github"></i></a></li>
-          </ul>
-        </div>
-       </div>
-       <div class="row">
-        <div class="col-md-8 offset-md-2 text-center">
-          <p class="small">Lorem ipsum dolor sit.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, eligendi.</p>
-        </div>
-       </div>
       </div>
     </div>
 
-   
- 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js" integrity="sha512-fCRpXk4VumjVNtE0j+OyOqzPxF1eZwacU3kN3SsznRPWHgMTSSo7INc8aY03KQDBWztuMo5KjKzCFXI/a5rVYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"
+      integrity="sha512-fCRpXk4VumjVNtE0j+OyOqzPxF1eZwacU3kN3SsznRPWHgMTSSo7INc8aY03KQDBWztuMo5KjKzCFXI/a5rVYQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
+      $(window).scroll(function () {
+        let scroll = $(window).scrollTop();
+        console.log(scroll);
 
-      $(window).scroll(function(){
-        let scroll = $(window).scrollTop()
-        console.log(scroll)
-
-        if(scroll > 300){
-          $(".header").addClass("fixed-top")
-        }else{
-          $(".header").removeClass("fixed-top")
+        if (scroll > 300) {
+          $(".header").addClass("fixed-top");
+        } else {
+          $(".header").removeClass("fixed-top");
         }
-      })
+      });
 
-      
-
-      const btns = $(".portfolio .btn-group button")
-      btns.click(function(){
-        let i= $(this).index()
+      const btns = $(".portfolio .btn-group button");
+      btns.click(function () {
+        let i = $(this).index();
         console.log(i);
-        btns.removeClass("active")
-        btns.eq(i).addClass("active")
+        btns.removeClass("active");
+        btns.eq(i).addClass("active");
 
-        let selector = btns.eq(i).attr("data-filter")
-        console.log(selector)
+        let selector = btns.eq(i).attr("data-filter");
+        console.log(selector);
 
         $(".portfolio .view").isotope({
-          filter:selector
-        })
-        
-      })
+          filter: selector,
+        });
+      });
 
-      $(".view .popup-link").magnificPopup({type:"image"})
+      $(".view .popup-link").magnificPopup({ type: "image" });
 
-      window.onload = function(){
-        $(".portfolio #btn").trigger("click")
-      }
+      window.onload = function () {
+        $(".portfolio #btn").trigger("click");
+      };
 
-
-
-      $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        autoplay:true,
-        responsive:{
-            0:{
-                items:1,
-            },
-            756:{
-                items:2,
-            }
-        }
-    })
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          756: {
+            items: 2,
+          },
+        },
+      });
     </script>
-</body>
+  </body>
 </html>

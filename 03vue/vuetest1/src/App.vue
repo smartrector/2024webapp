@@ -18,21 +18,13 @@
          </div>
       </div>
    </div>
-   <div class="modal" v-if="isModal">
-      <div class="inner">
-         <h2 class="mb-10">{{ data[selectedNum].title }}</h2>
-         <hr class="mb-10" />
-         <p class="mb-10">
-            {{ data[selectedNum].detail }}
-         </p>
-         <button class="btn btn-primary" v-on:click="isModal = false">닫기</button>
-      </div>
-   </div>
+   <ModalView :data="data" :isModal="isModal" :num="selectedNum" @closeModal="isModal = false" />
 </template>
 
 <script>
 import mdata from './assets/mdata';
 import NavbarView from './components/NavbarView.vue';
+import ModalView from './components/ModalView.vue';
 
 export default {
    name: 'appView',
@@ -52,9 +44,13 @@ export default {
          this.isModal = true;
          this.selectedNum = num;
       },
+      closeM() {
+         this.isModal = false;
+      },
    },
    components: {
       NavbarView: NavbarView,
+      ModalView: ModalView,
    },
 };
 </script>
@@ -137,30 +133,6 @@ $radius: 5px;
    }
    &.btn-info {
       background-color: greenyellow;
-   }
-}
-
-.modal {
-   position: fixed;
-   background-color: rgba(150, 0, 0, 0.5);
-   //  opacity: 0.3;
-   //  width: 100%;
-   //  height: 100%;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   .inner {
-      background: #fff;
-      width: 500px;
-      padding: 16px 16px;
-      border-radius: $radius;
-      @media screen and (max-width: 570px) {
-         width: 90%;
-      }
    }
 }
 </style>

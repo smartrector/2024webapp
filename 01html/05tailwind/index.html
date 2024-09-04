@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-blue-200 py-3 px-3 md:px-0">
+      <div class="container mx-auto bg-blue-100 flex justify-between">
+        <div
+          class="bg-pink-300 flex justify-center items-center px-3 rounded-sm"
+        >
+          logo
+        </div>
+        <nav class="hidden md:block">
+          <ul class="flex gap-3">
+            <li class="hover:bg-blue-800 rounded-sm">
+              <a href="#" class="hover:text-gray-100 p-2 block">menu1</a>
+            </li>
+            <li class="hover:bg-blue-800 rounded-sm">
+              <a href="#" class="hover:text-gray-100 p-2 block">menu1</a>
+            </li>
+            <li class="hover:bg-blue-800 rounded-sm">
+              <a href="#" class="hover:text-gray-100 p-2 block">menu1</a>
+            </li>
+            <li class="hover:bg-blue-800 rounded-sm">
+              <a href="#" class="hover:text-gray-100 p-2 block">menu1</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="block md:hidden w-10 h-10 bg-gray-300"></div>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 py-10 px-3 md:px-0">
+      <div class="container mx-auto flex gap-2 flex-col-reverse md:flex-row">
+        <div class="md:w-1/2 bg-blue-100 hover:drop-shadow-md rounded-sm">
+          1 text
+        </div>
+        <div class="md:w-1/2 bg-pink-100">2 img</div>
+      </div>
+    </div>
+  </body>
+</html>

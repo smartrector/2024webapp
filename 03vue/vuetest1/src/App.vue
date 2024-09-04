@@ -1,5 +1,6 @@
 <template>
    <NavbarView />
+   <SearchBarView :data="data" />
    <CardView :data="data" @openModal="modalOpen" />
    <ModalView :data="data" :isModal="isModal" :num="selectedNum" @closeModal="isModal = false" />
 </template>
@@ -9,6 +10,7 @@ import mdata from './assets/mdata';
 import NavbarView from './components/NavbarView.vue';
 import ModalView from './components/ModalView.vue';
 import CardView from './components/CardView.vue';
+import SearchBarView from './components/SearchBarView.vue';
 
 export default {
    name: 'appView',
@@ -37,6 +39,7 @@ export default {
       NavbarView: NavbarView,
       ModalView: ModalView,
       CardView: CardView,
+      SearchBarView: SearchBarView,
    },
 };
 </script>

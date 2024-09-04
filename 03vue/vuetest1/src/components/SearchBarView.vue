@@ -13,8 +13,6 @@
 
       <input type="search" @change="handleSearch" placeholder="검색어를 입력하세요" />
       <button>검색</button>
-
-      <p>{{ inputText }}</p>
    </div>
 </template>
 

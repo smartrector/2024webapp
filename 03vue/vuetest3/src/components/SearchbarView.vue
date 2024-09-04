@@ -1,13 +1,25 @@
 <template>
   <div class="search-bar">
-    <input type="text" class="inp" />
-    <div class="sIcon">
+    <input
+      type="text"
+      class="inp"
+      @input="inputText = $event.target.value"
+      placeholder="지역명을 입력하세요"
+    />
+    <div class="sIcon" @click="emits('searchCity', inputText)">
       <i class="fa-solid fa-magnifying-glass"></i>
     </div>
   </div>
+  {{ inputText }}
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const inputText = ref("");
+
+const emits = defineEmits();
+</script>
 
 <style lang="scss" scoped>
 .search-bar {

@@ -13,6 +13,8 @@
     </div>
   </div>
   {{ $store.state.name }}
+  {{ $store.state.counter }}
+  <button @click="$store.commit('addCount', 10)">넘버</button>
 </template>
 
 <script setup>

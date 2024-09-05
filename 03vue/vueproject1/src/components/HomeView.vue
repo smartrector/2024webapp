@@ -21,6 +21,7 @@
             src="../assets/images/illustration-hero.svg"
             alt=""
             class="img-fluid"
+            style="width: 100%"
           />
         </div>
       </div>

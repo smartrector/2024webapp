@@ -14,7 +14,6 @@ import { useStore } from "vuex";
 const store = useStore();
 
 onMounted(() => {
-  // getWeather();
   store.dispatch("getWeather");
 });
 </script>

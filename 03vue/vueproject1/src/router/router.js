@@ -24,7 +24,7 @@ const router = createRouter({
     },
     {
       path: "/portfolio/:num",
-      name: "portfolio detail",
+      name: "portfolioView",
       component: DetailView,
     },
   ],

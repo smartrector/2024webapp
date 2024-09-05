@@ -1,5 +1,5 @@
 <template>
-  <SearchbarView @searchCity="searchCity" />
+  <SearchbarView />
   <WeatherView />
 </template>
 

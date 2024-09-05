@@ -2,25 +2,21 @@
   <div class="weather-info">
     <div class="icon">
       <img
-        :src="`https://openweathermap.org/img/wn/${props.data.icon}@4x.png`"
+        :src="`https://openweathermap.org/img/wn/${$store.state.weatherData.icon}@4x.png`"
         alt=""
       />
     </div>
-    <div class="temp">{{ (props.data.temp - 273.15).toFixed(2) }}&deg</div>
-    <div class="text">{{ props.data.text }}</div>
+    <div class="temp">
+      {{ ($store.state.weatherData.temp - 273.15).toFixed(2) }}&deg
+    </div>
+    <div class="text">{{ $store.state.weatherData.text }}</div>
     <div class="location">
-      {{ props.data.location }} / {{ props.data.city }}
+      {{ $store.state.weatherData.location }} /
+      {{ $store.state.weatherData.city }}
     </div>
   </div>
-  {{ $store.state.name }}
-  {{ $store.state.counter }}
-  <button @click="$store.commit('addCount', 10)">넘버</button>
 </template>
 
-<script setup>
-const props = defineProps({
-  data: Array,
-});
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

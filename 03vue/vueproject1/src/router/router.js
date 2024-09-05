@@ -23,8 +23,8 @@ const router = createRouter({
       component: PortfolioView,
     },
     {
-      path: "/portfolio/:id",
-      name: "detail",
+      path: "/portfolio/:num",
+      name: "portfolio detail",
       component: DetailView,
     },
   ],

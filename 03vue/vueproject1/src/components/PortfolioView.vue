@@ -18,7 +18,12 @@
             class="img-fluid mb-3"
             style="height: 200px"
           />
-          <div class="btn btn-primary">view</div>
+          <div
+            class="btn btn-primary"
+            @click="$router.push({ path: '/portfolio/1' })"
+          >
+            view
+          </div>
         </div>
         <div
           class="col-md-4 text-center mb-3 d-flex flex-column align-items-center"
@@ -29,7 +34,12 @@
             class="img-fluid mb-3"
             style="height: 200px"
           />
-          <div class="btn btn-primary">view</div>
+          <div
+            class="btn btn-primary"
+            @click="$router.push({ path: '/portfolio/2' })"
+          >
+            view
+          </div>
         </div>
         <div
           class="col-md-4 text-center mb-3 d-flex flex-column align-items-center"
@@ -40,7 +50,12 @@
             class="img-fluid mb-3"
             style="height: 200px"
           />
-          <div class="btn btn-primary">view</div>
+          <div
+            class="btn btn-primary"
+            @click="$router.push({ path: '/portfolio/3' })"
+          >
+            view
+          </div>
         </div>
       </div>
     </div>

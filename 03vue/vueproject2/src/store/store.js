@@ -26,5 +26,9 @@ export default createStore({
       },
     ],
   },
-  mutations: {},
+  mutations: {
+    addUser(state, payload) {
+      state.userData.push(payload);
+    },
+  },
 });

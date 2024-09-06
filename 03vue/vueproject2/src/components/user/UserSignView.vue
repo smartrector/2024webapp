@@ -54,9 +54,22 @@ const userdata = ref({
   image: null,
 });
 
+const clearform = () => {
+  userdata.value.userid = null;
+  userdata.value.password = null;
+  userdata.value.username = null;
+  userdata.value.addr = null;
+};
+
 const addUser = () => {
-  alert("test");
-  store.commit("addUser", userdata.value);
+  let uData = {
+    userid: userdata.value.userid,
+    password: userdata.value.password,
+    username: userdata.value.username,
+    addr: userdata.value.addr,
+  };
+  store.commit("addUser", uData);
+  clearform();
 };
 </script>
 

@@ -23,19 +23,21 @@
 
 <script setup>
 import { computed } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 
 const props = defineProps({
   data: Array,
 });
 
 const route = useRoute();
+const router = useRouter();
 const item = computed(() => {
   const id = parseInt(route.params.num);
   return props.data.find((item) => item.id === id);
 });
 
-console.log(item.value);
+console.log(route);
+console.log(router);
 </script>
 
 <style lang="scss" scoped></style>

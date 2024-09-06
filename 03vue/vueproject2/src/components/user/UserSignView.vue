@@ -45,6 +45,8 @@
     <div class="btn btn-primary" @click="addUser">회원가입</div>
   </div>
   {{ userdata }}
+
+  <div class="btn btn-primary" @click="$store.state.modalView = true">모달</div>
 </template>
 
 <script setup>

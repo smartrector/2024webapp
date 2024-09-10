@@ -1,15 +1,22 @@
 <template>
   <div class="modalWrap">
     <div class="inner">
+      <MapView />
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, est.
-      <div class="btn btn-primary" @click="$store.state.modalView = false">
-        닫기
-      </div>
+      <div class="btn btn-primary" @click="closeModal">닫기</div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { userStore } from "vuex";
+import MapView from "./user/MapView.vue";
+const store = useStore();
+
+const closeModal = () => {
+  store.state.modalVie = false;
+};
+</script>
 
 <style lang="scss" scoped>
 .modalWrap {

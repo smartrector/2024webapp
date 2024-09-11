@@ -47,6 +47,10 @@ function App() {
       >
         모달
       </button>
+      {/* {shop.map(function(){})}
+        {shop.map(()=>{})}
+        {shop.map(i=> "test")} */}
+
       {shop.map((item, i) => {
         return (
           <>

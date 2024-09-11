@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Button className="btn-primary">click</Button>
-      <Button className="btn-info">click</Button>
+      <Button className="btn-info">onload</Button>
     </div>
   );
 }

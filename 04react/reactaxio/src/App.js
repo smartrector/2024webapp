@@ -26,13 +26,19 @@ function App() {
   const pageViewNumber = () => {
     const pageNumbers = [];
     const startPage = Math.floor(((currentpage - 1) / pagerCnt) * pagerCnt + 1);
-    const endPage = startPage + pagerCnt - 1;
+    // const endPage = startPage + pagerCnt - 1;
+    const endPage = Math.min(startPage + pagerCnt - 1, totalpage);
 
     for (let i = startPage; i <= endPage; i++) {
       pageNumbers.push(
         <span
           onClick={() => {
-            alert(i);
+            setCurrentpage(i);
+          }}
+          style={{
+            cursor: "pointer",
+            margin: "0 5px",
+            color: currentpage === i ? "red" : "black",
           }}
         >
           {i}
@@ -43,15 +49,45 @@ function App() {
     return pageNumbers;
   };
 
+  const currentPageData = () => {
+    const startIndex = (currentpage - 1) * listCnt;
+    const endIndex = startIndex + listCnt;
+    return data.slice(startIndex, endIndex);
+  };
+
   return (
     <div>
-      {data?.map((item, i) => {
+      <div>totalPage:{totalpage}</div>
+      {currentPageData().map((item, i) => {
         return (
           <div key={i}>
             {item.id}. {item.title}
           </div>
         );
       })}
+
+      <div style={{ fontSize: "2em" }}>{pageViewNumber()}</div>
+      <div>
+        {currentpage > 1 && (
+          <button
+            onClick={() => {
+              setCurrentpage(currentpage - 1);
+            }}
+          >
+            이전
+          </button>
+        )}
+
+        {currentpage < totalpage && (
+          <button
+            onClick={() => {
+              setCurrentpage(currentpage + 1);
+            }}
+          >
+            다음
+          </button>
+        )}
+      </div>
     </div>
   );
 }

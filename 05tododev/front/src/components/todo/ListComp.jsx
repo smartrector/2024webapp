@@ -17,7 +17,7 @@ const initState = {
 };
 
 function ListComp() {
-  const { page, size, moveToRead } = useCustomMove();
+  const { page, size, moveToRead, refresh } = useCustomMove();
   const [data, setData] = useState(initState);
   //   const [queryParams] = useSearchParams();
   //   console.log(queryParams.get("size"));
@@ -31,7 +31,7 @@ function ListComp() {
       console.log(res);
       setData(res);
     });
-  }, [page, size]);
+  }, [page, size, refresh]);
   return (
     <div>
       {data.dtoList.map((item, i) => {

@@ -11,3 +11,13 @@ export const getList = async (pageParam) => {
   });
   return res.data;
 };
+
+export const getOne = async (tno) => {
+  const res = await axios.get(`${perfix}/${tno}`);
+  return res;
+};
+
+export const postAdd = async (obj) => {
+  const res = await axios.post(`${perfix}/`, obj);
+  return res;
+};

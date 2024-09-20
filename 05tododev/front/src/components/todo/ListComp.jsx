@@ -17,7 +17,7 @@ const initState = {
 };
 
 function ListComp() {
-  const { page, size } = useCustomMove();
+  const { page, size, moveToRead } = useCustomMove();
   const [data, setData] = useState(initState);
   //   const [queryParams] = useSearchParams();
   //   console.log(queryParams.get("size"));
@@ -36,7 +36,13 @@ function ListComp() {
     <div>
       {data.dtoList.map((item, i) => {
         return (
-          <div key={i} className="flex border-b-2 py-3">
+          <div
+            key={i}
+            className="flex border-b-2 py-3"
+            onClick={() => {
+              moveToRead(item.tno);
+            }}
+          >
             <div className="text-2xl w-1/12">{item.tno}</div>
             <div className="text-2xl w-7/12 font-extrabold">{item.title}</div>
             <div className="text-2xl w-4/12">{item.dueDate}</div>

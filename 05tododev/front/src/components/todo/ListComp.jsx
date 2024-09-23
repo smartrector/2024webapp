@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getList } from "../../api/todoApi";
 import { useSearchParams } from "react-router-dom";
 import useCustomMove from "../../hooks/useCustomMove";
+import PagerComp from "../common/PagerComp";
 
 const initState = {
   dtoList: [],
@@ -17,7 +18,7 @@ const initState = {
 };
 
 function ListComp() {
-  const { page, size, moveToRead, refresh } = useCustomMove();
+  const { page, size, moveToRead, refresh, moveToList } = useCustomMove();
   const [data, setData] = useState(initState);
   //   const [queryParams] = useSearchParams();
   //   console.log(queryParams.get("size"));
@@ -49,6 +50,8 @@ function ListComp() {
           </div>
         );
       })}
+
+      <PagerComp serverData={data} movePage={moveToList} />
     </div>
   );
 }

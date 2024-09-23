@@ -18,7 +18,8 @@ const initState = {
 };
 
 function ListComp() {
-  const { page, size, moveToRead, refresh, moveToList } = useCustomMove();
+  const { page, size, moveToRead, refresh, moveToList, moveToWrite } =
+    useCustomMove();
   const [data, setData] = useState(initState);
   //   const [queryParams] = useSearchParams();
   //   console.log(queryParams.get("size"));
@@ -50,6 +51,17 @@ function ListComp() {
           </div>
         );
       })}
+
+      <div className="flex my-4 justify-end">
+        <button
+          className="bg-green-500 rounded py-2 px-4 text-white"
+          onClick={() => {
+            moveToWrite();
+          }}
+        >
+          글쓰기
+        </button>
+      </div>
 
       <PagerComp serverData={data} movePage={moveToList} />
     </div>

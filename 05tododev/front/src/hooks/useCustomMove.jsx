@@ -50,7 +50,13 @@ const useCustomMove = () => {
     });
   };
 
-  return { page, size, moveToList, moveToRead, refresh };
+  const moveToWrite = () => {
+    navigate({
+      pathname: `../add`,
+    });
+  };
+
+  return { page, size, moveToList, moveToRead, refresh, moveToWrite };
 };
 
 export default useCustomMove;

@@ -21,3 +21,13 @@ export const postAdd = async (obj) => {
   const res = await axios.post(`${perfix}/`, obj);
   return res.data;
 };
+
+export const deleteOne = async (tno) => {
+  const res = await axios.delete(`${perfix}/${tno}`);
+  return res.data;
+};
+
+export const putOne = async (todo) => {
+  const res = await axios.put(`${perfix}/${todo.tno}`, todo);
+  return res.data;
+};

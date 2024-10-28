@@ -21,7 +21,7 @@ function Layout({ children }) {
             {loginState.email ? (
               <>
                 <li>
-                  <Link to="/member/login">LOGINOUT</Link>
+                  <Link to="/member/logout">LOGINOUT</Link>
                 </li>
               </>
             ) : (

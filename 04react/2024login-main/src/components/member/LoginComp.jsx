@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../../slices/loginSlice";
+import { login, loginPostAsync } from "../../slices/loginSlice";
 
 const initState = {
   email: "",
@@ -18,12 +18,11 @@ function LoginComp() {
   };
 
   const handleClickLogin = () => {
-    dispatch(login(loginParam));
+    dispatch(loginPostAsync(loginParam));
   };
 
   return (
     <div>
-      {loginParam.email} / {loginParam.pw}
       <div>
         <div className="h-screen  flex items-center">
           <div className="container mx-auto ">

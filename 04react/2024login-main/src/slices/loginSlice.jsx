@@ -27,7 +27,8 @@ const loginSlice = createSlice({
     builder
       .addCase(loginPostAsync.fulfilled, (state, action) => {
         console.log("fullfill");
-        console.log(action.payload);
+        // console.log(action.payload);
+        return action.payload;
       })
       .addCase(loginPostAsync.pending, () => {
         console.log("pending");

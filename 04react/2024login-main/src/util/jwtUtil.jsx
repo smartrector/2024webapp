@@ -16,6 +16,7 @@ const refreshJWT = async (accessToken, refreshToken) => {
     `${host}/api/member/refresh?refreshToken=${refreshToken}`,
     header
   );
+  return res.data;
 };
 
 const beforeReq = (config) => {

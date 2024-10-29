@@ -3,11 +3,10 @@ import Layout from "../layout/Layout";
 import useCustomLogin from "../hooks/useCustomLogin";
 
 function AboutComp() {
-  const { isLogin, loginState } = useCustomLogin();
+  const { isLogin, loginState, moveToLoginReturn } = useCustomLogin();
 
-  if (isLogin) {
-    alert("로그인중");
-    console.log("test");
+  if (!isLogin) {
+    return moveToLoginReturn();
   }
 
   return (

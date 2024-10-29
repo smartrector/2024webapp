@@ -32,7 +32,7 @@ const responseFail = (error) => {
   return Promise.reject(error);
 };
 
-jwtAxios.interceptors.request(beforeReq, requestFail);
-jwtAxios.interceptors.response(beforeRes, responseFail);
+jwtAxios.interceptors.request.use(beforeReq, requestFail);
+jwtAxios.interceptors.response.use(beforeRes, responseFail);
 
 export default jwtAxios;

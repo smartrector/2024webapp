@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { login, loginPostAsync } from "../../slices/loginSlice";
+import { useNavigate } from "react-router-dom";
 
 const initState = {
   email: "",
@@ -11,6 +12,7 @@ function LoginComp() {
   const [loginParam, setLoginParam] = useState({ ...initState });
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     loginParam[e.target.name] = e.target.value;
@@ -18,7 +20,16 @@ function LoginComp() {
   };
 
   const handleClickLogin = () => {
-    dispatch(loginPostAsync(loginParam));
+    dispatch(loginPostAsync(loginParam))
+      .unwrap()
+      .then((data) => {
+        if (data.error) {
+          alert("이메일과 패스워드 확인");
+        } else {
+          // alert("로그인됨");
+          navigate({ pathname: "/" }, { replace: true });
+        }
+      });
   };
 
   return (
